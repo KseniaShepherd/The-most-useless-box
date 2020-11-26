@@ -16,12 +16,12 @@ public class User extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            box.setToggleSwitchIncluded(true);
-            boolean result = box.getToggleSwitchIncluded();
-            if (result) {
+            boolean result = box.getToggleSwitchOn();
+            if (!result) {
+                box.setToggleSwitchOn(true);
                 System.out.println("Пользователь включил тумблер");
+                count--;
             }
-            count--;
         }
         System.out.println("Я наигрался!");
     }

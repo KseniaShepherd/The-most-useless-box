@@ -1,20 +1,20 @@
 public class Box {
-    public static final int TIME_SLEEP = 2000;
-    private volatile boolean toggleSwitchIncluded;
+    public static final int SLEEP_TIME = 2000;
+    private volatile boolean toggleSwitchOn;
 
     public Box() {
-        this.toggleSwitchIncluded = false;
+        this.toggleSwitchOn = false;
     }
 
-    public boolean getToggleSwitchIncluded() {
-        return toggleSwitchIncluded;
+    public boolean getToggleSwitchOn() {
+        return toggleSwitchOn;
     }
 
-    public void setToggleSwitchIncluded(boolean toggleSwitchIncluded) {
-        this.toggleSwitchIncluded = toggleSwitchIncluded;
+    public void setToggleSwitchOn(boolean toggleSwitchOn) {
+        this.toggleSwitchOn = toggleSwitchOn;
     }
 
     public int getTimeSleep() {
-        return TIME_SLEEP;
+        return SLEEP_TIME;
     }
 }

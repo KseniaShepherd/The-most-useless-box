@@ -14,9 +14,9 @@ public class Toy extends Thread {
             } catch (InterruptedException e) {
                 return;
             }
-            box.setToggleSwitchIncluded(false);
-            boolean result = box.getToggleSwitchIncluded();
-            if (!result) {
+            boolean result = box.getToggleSwitchOn();
+            if (result) {
+                box.setToggleSwitchOn(false);
                 System.out.println("Игрушка выключила тумблер");
             }
         }
